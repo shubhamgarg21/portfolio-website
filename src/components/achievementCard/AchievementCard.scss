@@ -4,6 +4,7 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  object-fit: contain;
 }
 .card-title {
   color: $titleColor;
@@ -44,11 +45,6 @@
   justify-content: center;
   align-items: center;
 }
-.achievement-cards-div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
-}
 .certificate-card-footer {
   display: flex;
   align-items: center;
@@ -74,4 +70,28 @@
 }
 span.certificate-tag:hover {
   background: $buttonHover;
+}
+
+@media (max-width: 768px) {
+  .certificate-card {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .certificate-image-div {
+    height: 200px;
+  }
+
+  .card-image {
+    width: 200px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-subtitle {
+    font-size: 1rem;
+  }
 }

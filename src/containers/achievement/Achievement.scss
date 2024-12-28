@@ -15,6 +15,15 @@
   color: $subTitle;
 }
 
+.achievement-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .achievement-heading {
@@ -30,5 +39,17 @@
     font-size: 16px;
     line-height: normal;
     text-align: center;
+  }
+  .achievement-cards-div {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    padding: 10px;
+    gap: 1rem;
+  }
+  .main#achievements {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
   }
 }
